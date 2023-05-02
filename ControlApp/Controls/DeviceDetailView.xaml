@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlApp.Controls.DeviceDetailView"
+             xmlns:resx="clr-namespace:ControlApp.ResX"             
+             >
+    <ContentView.Content>
+        <ScrollView>
+            <StackLayout>
+                <StackLayout Orientation="Vertical" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Spacing="0">
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Center" Style="{StaticResource MainStackLayoutStyle}" >
+                        <Label x:Name="DeviceNameLabel" FontAttributes="Bold" FontSize="Large" HorizontalOptions="Center" VerticalOptions="Center"/>                        
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Spacing="0">
+                        <Image x:Name="DeviceImage" HorizontalOptions="Center" VerticalOptions="FillAndExpand" WidthRequest="162" HeightRequest="162"/>
+                        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                            <StackLayout Style="{StaticResource HeadingStackLayoutStyle}">
+                                <Label FontSize="Medium" FontAttributes="Bold" Text="Geräteinformationen" HorizontalOptions="CenterAndExpand"/>
+                            </StackLayout>
+                            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" Padding="10,0,10,0" Spacing="10" Margin="0,0,0,20">
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                                    <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="StartAndExpand">
+                                        <Label FontSize="Medium" Text="Status"/>
+                                        <Label FontSize="Medium" Text=":"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                                        <CheckBox x:Name="OnlineStateCheckBox" IsChecked="true" IsEnabled="False" Style="{StaticResource ConnectionCheckBoxStyle}"/>
+                                        <Label FontSize="Medium" x:Name="OnlineStateLabel"/>
+                                    </StackLayout>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                                    <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="StartAndExpand">
+                                        <Label FontSize="Medium" Text="Typ"/>
+                                        <Label FontSize="Medium" Text=":"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                                        <Label x:Name="DeviceTypeLabel" FontSize="Medium"/>
+                                    </StackLayout>
+                                </StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                                    <StackLayout Orientation="Horizontal" Spacing="0" HorizontalOptions="StartAndExpand">
+                                        <Label FontSize="Medium" Text="Reihenfolge"/>
+                                        <Label FontSize="Medium" Text=":"/>
+                                    </StackLayout>
+                                    <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                                        <Label FontSize="Medium" Text="1"/>
+                                    </StackLayout>
+                                </StackLayout>
+                            </StackLayout>
+                        </StackLayout>
+                    </StackLayout>
+                    <!--Füllstand-->
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Spacing="20" Margin="0,0,0,20">
+                        <StackLayout Style="{StaticResource HeadingStackLayoutStyle}">
+                            <Label Text="Lagerplatz" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" FontAttributes="Bold"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Horizontal" Spacing="0" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                                <Label FontSize="Medium" Text="Kapatzität"/>
+                                <Label FontSize="Medium" Text=":"/>
+                            </StackLayout>
+                            <Label FontSize="Medium" Text="1369" HorizontalOptions="CenterAndExpand"/>
+                            <Label FontSize="Medium" Text="/" HorizontalOptions="CenterAndExpand"/>
+                            <Label FontSize="Medium" Text="2400" HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+                    <!--Temperature-->
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Spacing="20" Margin="0,0,0,20">
+                        <StackLayout Style="{StaticResource HeadingStackLayoutStyle}">
+                            <Label Text="Sensordaten" VerticalOptions="Center" HorizontalOptions="Center" FontSize="Large" FontAttributes="Bold"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Horizontal" Spacing="0" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                                <Label FontSize="Medium" Text="HSRackRoom"/>
+                                <Label FontSize="Medium" Text=":"/>
+                            </StackLayout>
+                            <Label FontSize="Medium" Text="-129°C" HorizontalOptions="CenterAndExpand"/>
+                            <Label FontSize="Medium" Text="23.12.2019 9:34" HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Horizontal" Spacing="0" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                                <Label FontSize="Medium" Text="HSRackRoom"/>
+                                <Label FontSize="Medium" Text=":"/>
+                            </StackLayout>
+                            <Label FontSize="Medium" Text="-129°C" HorizontalOptions="CenterAndExpand"/>
+                            <Label FontSize="Medium" Text="23.12.2019 9:34" HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+                            <StackLayout Orientation="Horizontal" Spacing="0" VerticalOptions="Center" HorizontalOptions="CenterAndExpand">
+                                <Label FontSize="Medium" Text="HSRackRoom"/>
+                                <Label FontSize="Medium" Text=":"/>
+                            </StackLayout>
+                            <Label FontSize="Medium" Text="-129°C" HorizontalOptions="CenterAndExpand"/>
+                            <Label FontSize="Medium" Text="23.12.2019 9:34" HorizontalOptions="CenterAndExpand"/>
+                        </StackLayout>
+                    </StackLayout>
+                    
+                    
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+
+    </ContentView.Content>
+</ContentView>

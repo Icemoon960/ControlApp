@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:viewmodels="clr-namespace:ControlApp.ViewModels"
+    xmlns:views="clr-namespace:ControlApp.Views"
+    x:Class="ControlApp.Views.MainPage"
+    x:DataType="views:MainPage"
+    xmlns:resx="clr-namespace:ControlApp.ResX"    
+    Visual="Material"
+    Title="{x:Static resx:ControlAppResources.AppTitle}">
+    <TableView Intent="Menu">
+        <TableRoot>
+            <TableSection>
+                <TextCell Text="{x:Static resx:ControlAppResources.Devices}"   
+                          Detail="{x:Static resx:ControlAppResources.Device_Detail}"
+                          Command="{Binding NavigateCommand}"/>
+            </TableSection>
+        </TableRoot>
+    </TableView>
+                
+</ContentPage>

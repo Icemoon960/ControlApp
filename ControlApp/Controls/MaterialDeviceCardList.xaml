@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:cca="http://Askion.com/ControlApp"
+             mc:Ignorable="d"
+             xmlns:custom="clr-namespace:ControlApp.Controls"
+             x:Name="MaterialDeviceCardListXAML"
+             x:Class="ControlApp.Controls.MaterialDeviceCardList"             
+             >
+  <ContentView.Content>
+        <StackLayout x:Name="CardList" 
+                     BindableLayout.ItemsSource="{Binding Path = Items, Source={x:Reference MaterialDeviceCardListXAML}}" 
+                     Orientation="Vertical" VerticalOptions="End" HorizontalOptions="FillAndExpand"  
+                     Spacing="0"
+                     >
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                            <custom:MaterialDeviceCard
+                                ClickCommand="{Binding Path=CardClickCommand, Source={x:Reference MaterialDeviceCardListXAML}}"
+                                ClickCommandParameter="{Binding . }" 
+                                TappedEventHandler="{Binding Path=TappedEventHandler, Source={x:Reference MaterialDeviceCardListXAML}}"
+                                DeviceTypeLabelText="{Binding Name}"
+                                DeviceImageSource="awbfront_hdpi_trans_image.png"
+                                TemperatureLabelText="{Binding Temprature[0].Temp}"
+                                TemperatureProgress="0.54324"
+                                MaxCapacityLabelText="{Binding StorageCapacity}"
+                                ActualCapacityLabelText="{Binding StorageUse}"
+                                CapacityProgress="0.2323"
+                                />                            
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

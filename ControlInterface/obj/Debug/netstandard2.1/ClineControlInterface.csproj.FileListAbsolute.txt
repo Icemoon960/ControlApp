@@ -1,0 +1,9 @@
+D:\BA\ControlApp\ClineControlInterface\bin\Debug\netstandard2.1\ClineControlInterface.deps.json
+D:\BA\ControlApp\ClineControlInterface\bin\Debug\netstandard2.1\ClineControlInterface.dll
+D:\BA\ControlApp\ClineControlInterface\bin\Debug\netstandard2.1\ClineControlInterface.pdb
+D:\BA\ControlApp\ClineControlInterface\obj\Debug\netstandard2.1\ClineControlInterface.AssemblyInfoInputs.cache
+D:\BA\ControlApp\ClineControlInterface\obj\Debug\netstandard2.1\ClineControlInterface.AssemblyInfo.cs
+D:\BA\ControlApp\ClineControlInterface\obj\Debug\netstandard2.1\ClineControlInterface.csproj.CoreCompileInputs.cache
+D:\BA\ControlApp\ClineControlInterface\obj\Debug\netstandard2.1\ClineControlInterface.dll
+D:\BA\ControlApp\ClineControlInterface\obj\Debug\netstandard2.1\ClineControlInterface.pdb
+D:\BA\ControlApp\ClineControlInterface\obj\Debug\netstandard2.1\ClineControlInterface.csproj.AssemblyReference.cache

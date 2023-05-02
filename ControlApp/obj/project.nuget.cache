@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "o2yHh3SQ7JPTDpSCteY3QPz50e0LcZZb0vMJcabyG5pKAdyH2wicxRYt+yXr51R8n+luxAszcjQewzD7hnyyuA==",
+  "success": true,
+  "projectFilePath": "e:\\Dokumente\\Bachelorarbeit\\Code\\ControlApp\\ControlApp\\ControlApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\.packages\\autofac\\5.0.0\\autofac.5.0.0.nupkg.sha512",
+    "C:\\.packages\\autofac.extras.commonservicelocator\\6.0.1\\autofac.extras.commonservicelocator.6.0.1.nupkg.sha512",
+    "C:\\.packages\\commonservicelocator\\2.0.5\\commonservicelocator.2.0.5.nupkg.sha512",
+    "C:\\.packages\\jsonsubtypes\\1.8.0\\jsonsubtypes.1.8.0.nupkg.sha512",
+    "C:\\.packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
+    "C:\\.packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\.packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\.packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\.packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\.packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
+    "C:\\.packages\\system.threading.tasks.extensions\\4.5.2\\system.threading.tasks.extensions.4.5.2.nupkg.sha512",
+    "C:\\.packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\.packages\\xamarin.forms\\5.0.0.2083\\xamarin.forms.5.0.0.2083.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CarouselPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"             
+             x:Class="ControlApp.Views.DeviceDetailPage"
+             xmlns:resx="clr-namespace:ControlApp.ResX"
+             xmlns:viewmodels="clr-namespace:ControlApp.ViewModels"
+             xmlns:controls="clr-namespace:ControlApp.Controls"
+             xmlns:models="clr-namespace:ControlApp.ViewModels.Models"
+             x:Name="DeviceDetailPageXAML"
+             x:DataType="viewmodels:OverViewPageViewModel"
+             ItemsSource="{Binding Devices}"
+             SelectedItem="{Binding SelectedDevice}">
+    <CarouselPage.ItemTemplate>
+        <DataTemplate x:DataType="models:DeviceInformationModel">
+            <ContentPage>
+                <StackLayout>                    
+                    <controls:DeviceDetailView 
+                        DeviceNameText="{Binding Name}"
+                        DeviceTypeText="HS200 M"
+                        OnlineState="{Binding Connection}"
+                        OnlineStateText="{Binding Connection}"
+                        DeviceImageSource="awbfront_hdpi_trans_image.png"/>
+                </StackLayout>
+            </ContentPage>
+        </DataTemplate>
+    </CarouselPage.ItemTemplate>
+</CarouselPage>

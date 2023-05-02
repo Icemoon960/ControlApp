@@ -1,0 +1,12 @@
+D:\BA\ControlApp\ControlApp.CCI\bin\Debug\netstandard2.1\ControlApp.CCI.deps.json
+D:\BA\ControlApp\ControlApp.CCI\bin\Debug\netstandard2.1\ControlApp.CCI.dll
+D:\BA\ControlApp\ControlApp.CCI\bin\Debug\netstandard2.1\ControlApp.CCI.pdb
+D:\BA\ControlApp\ControlApp.CCI\bin\Debug\netstandard2.1\ClineControlInterface.dll
+D:\BA\ControlApp\ControlApp.CCI\bin\Debug\netstandard2.1\ClineControlInterface.pdb
+D:\BA\ControlApp\ControlApp.CCI\obj\Debug\netstandard2.1\ControlApp.CCI.csproj.AssemblyReference.cache
+D:\BA\ControlApp\ControlApp.CCI\obj\Debug\netstandard2.1\ControlApp.CCI.AssemblyInfoInputs.cache
+D:\BA\ControlApp\ControlApp.CCI\obj\Debug\netstandard2.1\ControlApp.CCI.AssemblyInfo.cs
+D:\BA\ControlApp\ControlApp.CCI\obj\Debug\netstandard2.1\ControlApp.CCI.csproj.CoreCompileInputs.cache
+D:\BA\ControlApp\ControlApp.CCI\obj\Debug\netstandard2.1\ControlApp.CCI.csproj.CopyComplete
+D:\BA\ControlApp\ControlApp.CCI\obj\Debug\netstandard2.1\ControlApp.CCI.dll
+D:\BA\ControlApp\ControlApp.CCI\obj\Debug\netstandard2.1\ControlApp.CCI.pdb

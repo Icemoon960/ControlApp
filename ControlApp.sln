@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClineControlApp.Core", "ClineControlAppCore\ClineControlApp.Core.csproj", "{C87AAA6B-B7BE-4789-A43A-ED8FF39E773C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClineControlApp.CCI", "ClineControlApp.CCI\ClineControlApp.CCI.csproj", "{AE126D1C-3540-4535-8210-4B4882CF2C1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClineControlApp.Android", "ClineControlApp.Android\ClineControlApp.Android.csproj", "{CC329FB0-E855-4091-AD26-73F835ED1407}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClineControlApp", "ClineControlApp\ClineControlApp.csproj", "{B9317FC8-FFFF-46A8-B364-9FD3826DA116}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClineControlInterface", "ClineControlInterface\ClineControlInterface.csproj", "{61765EC0-6D92-431D-8A83-BBE2AA0B1E98}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{DDB715B1-5DF9-49FD-9139-74101C896D00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C87AAA6B-B7BE-4789-A43A-ED8FF39E773C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C87AAA6B-B7BE-4789-A43A-ED8FF39E773C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C87AAA6B-B7BE-4789-A43A-ED8FF39E773C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C87AAA6B-B7BE-4789-A43A-ED8FF39E773C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE126D1C-3540-4535-8210-4B4882CF2C1E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE126D1C-3540-4535-8210-4B4882CF2C1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE126D1C-3540-4535-8210-4B4882CF2C1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE126D1C-3540-4535-8210-4B4882CF2C1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC329FB0-E855-4091-AD26-73F835ED1407}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CC329FB0-E855-4091-AD26-73F835ED1407}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CC329FB0-E855-4091-AD26-73F835ED1407}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{CC329FB0-E855-4091-AD26-73F835ED1407}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CC329FB0-E855-4091-AD26-73F835ED1407}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CC329FB0-E855-4091-AD26-73F835ED1407}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{B9317FC8-FFFF-46A8-B364-9FD3826DA116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9317FC8-FFFF-46A8-B364-9FD3826DA116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9317FC8-FFFF-46A8-B364-9FD3826DA116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9317FC8-FFFF-46A8-B364-9FD3826DA116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61765EC0-6D92-431D-8A83-BBE2AA0B1E98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61765EC0-6D92-431D-8A83-BBE2AA0B1E98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61765EC0-6D92-431D-8A83-BBE2AA0B1E98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61765EC0-6D92-431D-8A83-BBE2AA0B1E98}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DDB715B1-5DF9-49FD-9139-74101C896D00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDB715B1-5DF9-49FD-9139-74101C896D00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDB715B1-5DF9-49FD-9139-74101C896D00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDB715B1-5DF9-49FD-9139-74101C896D00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3EF0BD9-EC9A-4698-8481-727AF05D3CEF}
+		RESX_NeutralResourcesLanguage = de-DE
+		RESX_SortFileContentOnSave = True
+		RESX_ConfirmAddLanguageFile = True
+	EndGlobalSection
+EndGlobal

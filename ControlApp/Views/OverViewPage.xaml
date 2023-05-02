@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"    
+    xmlns:controls="clr-namespace:ControlApp.Controls"
+    xmlns:viewmodels="clr-namespace:ControlApp.ViewModels"
+    xmlns:resx="clr-namespace:ControlApp.ResX"    
+    x:Class="ControlApp.Views.OverViewPage"
+    x:DataType="viewmodels:OverViewPageViewModel"
+    x:Name="OverViewPageXAML"
+    Visual="Material"    
+    Title= "{x:Static resx:ControlAppResources.Devices}"  
+    >
+    <ContentPage.BindingContext>
+        <viewmodels:OverViewPageViewModel/>
+    </ContentPage.BindingContext>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Order="Secondary"
+                     Text="{ x:Static resx:ControlAppResources.Settings}"
+                     Priority="2"
+                     />
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical">
+                <controls:MaterialDeviceCardList Items="{Binding Devices}" 
+                    CardClickCommand="{Binding GoToDetailPageCommand}"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

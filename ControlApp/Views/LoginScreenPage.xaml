@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlApp.Views.LoginScreenPage"
+             xmlns:resx="clr-namespace:ControlApp.ResX"
+             xmlns:viewmodels="clr-namespace:ControlApp.ViewModels"             
+             xmlns:controls="clr-namespace:ControlApp.Controls"
+             xmlns:models="clr-namespace:ControlApp.ViewModels.Models"
+             Visual="Material"
+             Title="Cline-Control-App">
+             <!--
+             somehow breaks loading
+             x:DataType="viewmodels:LoginPageViewModel"
+             -->
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical">                
+                <Image Source="logo.png" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
+                <StackLayout VerticalOptions="StartAndExpand" HorizontalOptions="FillAndExpand">
+                    <Entry VerticalOptions="FillAndExpand" Placeholder="{x:Static resx:ControlAppResources.Server}"   Text="{Binding ServerIP}" IsEnabled="False"/>
+                    <Entry VerticalOptions="FillAndExpand" Placeholder="{x:Static resx:ControlAppResources.Username}" Text="{Binding Username}" IsEnabled="True"/>
+                    <Entry VerticalOptions="FillAndExpand" Placeholder="{x:Static resx:ControlAppResources.Password}" Text="{Binding Password}" IsEnabled="True" IsPassword="True"/>             
+                    <Button Text="{x:Static resx:ControlAppResources.Login}" Command="{Binding GoToOverViewPageCommand}"/>
+                </StackLayout>                
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

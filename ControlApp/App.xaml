@@ -1,0 +1,180 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application x:Class="ClineControlApp.App"
+             xmlns="http://xamarin.com/schemas/2014/forms"             
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:utils="clr-namespace:ClineControlApp.Utilities">
+    <Application.Resources>
+        <OnPlatform x:Key="FontFamily.RobotoRegular"
+            x:TypeArguments="x:String"
+            Android="Fonts/Roboto-Regular.ttf#Roboto-Regular"
+            iOS="Roboto-Regular" />
+        <OnPlatform x:Key="FontFamily.RobotoMedium"
+            x:TypeArguments="x:String"
+            Android="Fonts/Roboto-Medium.ttf#Roboto-Medium"
+            iOS="Roboto-Medium" />
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>    
+                <!-- Colors -->
+                <ResourceDictionary>
+                    <!--MaterialThemes primary -->
+                    <Color x:Key="PrimaryHueLightBrush" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#FF7099D1"</x:String>
+                        </x:Arguments>
+                    </Color>
+                    <Color x:Key="PrimaryHueLightForegroundBrush" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#FFFFFF"</x:String>
+                        </x:Arguments>
+                    </Color>
+                    <Color x:Key="PrimaryHueMidBrush" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#FF4879BB"</x:String>
+                        </x:Arguments>
+                    </Color>
+                    <Color x:Key="PrimaryHueMidForegroundBrush" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#FFFFFF"</x:String>
+                        </x:Arguments>
+                    </Color>
+                    <Color x:Key="PrimaryHueDarkBrush" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#FF2B5A9B"</x:String>
+                        </x:Arguments>
+                    </Color>
+                    <Color x:Key="PrimaryHueDarkForegroundBrush" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#FFFFFF"</x:String>
+                        </x:Arguments>
+                    </Color>
+
+                    <!--MaterialThemes accent -->
+                    <Color x:Key="SecondaryAccentBrush" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#FF33CC33"</x:String>
+                        </x:Arguments>
+                    </Color>
+                    <Color x:Key="SecondaryAccentForegroundBrush" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#FFFFFF"</x:String>
+                        </x:Arguments>
+                    </Color>
+
+                    <!--Askion Font-->                    
+                    <Color x:Key="GlyphColorBrush" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#FF9C9D9F"</x:String>
+                        </x:Arguments>
+                    </Color>
+                    <Color x:Key="TextBursh" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#767676"</x:String>
+                        </x:Arguments>
+                    </Color>
+                    <Color x:Key="TextBurshDark" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#595959"</x:String>
+                        </x:Arguments>
+                    </Color>
+                    
+                    <!--Error-->
+                    <Color x:Key="ErrorBrush" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#ff4444"</x:String>
+                        </x:Arguments>
+                    </Color>
+                    <Color x:Key="ErrorDarkBrush" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#CC0000"</x:String>
+                        </x:Arguments>
+                    </Color>
+                    <!--Success-->
+                    <Color x:Key="SuccessBrush" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#00C851"</x:String>
+                        </x:Arguments>
+                    </Color>
+                    <Color x:Key="SuccessDarkBrush" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#007E33"</x:String>
+                        </x:Arguments>
+                    </Color>
+                    <!--Info-->
+                    <Color x:Key="InfoBrush" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#FFA1D7F5"</x:String>
+                        </x:Arguments>
+                    </Color>
+                    <Color x:Key="InfoDarkBrush" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#FF66A9CF"</x:String>
+                        </x:Arguments>
+                    </Color>
+                    <!--Warning-->
+                    <Color x:Key="WarningBrush" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#ffbb33"</x:String>
+                        </x:Arguments>
+                    </Color>
+                    <Color x:Key="WarningDarkBrush" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#FF8800"</x:String>
+                        </x:Arguments>
+                    </Color>
+                    <!--Label-->
+                    <Color x:Key="LabelBrush" x:FactoryMethod="FromHex">
+                        <x:Arguments>
+                            <x:String>"#FF898989"</x:String>
+                        </x:Arguments>
+                    </Color>
+                </ResourceDictionary>
+                <!-- Styles -->
+                <!---Value="{StaticResource PrimaryHueMidBrush}"-->
+                <ResourceDictionary>
+                    <Style TargetType="Label">
+                        <Setter Property="TextColor" Value="#595959" />
+                        <!--Value="{StaticResource TextBurshDark}"-->
+                    </Style>
+                    <Style TargetType="Label" x:Key="HeadingLabelStyle">
+                        <Setter Property="TextColor" Value="#767676" />
+                        <!--Value="{StaticResource TextBursh}" -->
+                    </Style>
+                    <Style TargetType="Label" x:Key="MainLabelStyle">
+                        <Setter Property="TextColor" Value="#FF9C9D9F" />
+                        <!--Value="{StaticResource GlyphColorBrush}"-->
+                    </Style>
+                    <Style TargetType="Button">
+                        <Setter Property="TextColor" Value="#595959" />
+                        <!--Value="{StaticResource TextBurshDark}"-->
+                        <Setter Property="BackgroundColor" Value="#FF4879BB" />
+                        <!--Value="{StaticResource PrimaryHueMidBrush}"-->
+                    </Style>
+                    <Style TargetType="Entry">
+                        <Setter Property="BackgroundColor" Value="#FF4879BB" />
+                        <!--Value="{StaticResource PrimaryHueMidBrush}"-->
+                        <Setter Property="TextColor" Value="#595959"/>
+                        <!--Value="{StaticResource TextBurshDark}"-->
+                    </Style>
+                    <Style TargetType="StackLayout">
+                        <Setter Property="BackgroundColor" Value="#FF7099D1" />
+                    </Style>
+                    <Style TargetType="Frame">
+                        <Setter Property="BackgroundColor" Value="#FF7099D1" />
+                    </Style>
+                    <Style TargetType="StackLayout" x:Key="HeadingStackLayoutStyle">
+                        <Setter Property="BackgroundColor" Value="#FF66A9CF"/>
+                    </Style>
+                    <Style TargetType="StackLayout" x:Key="MainStackLayoutStyle">
+                        <Setter Property="BackgroundColor" Value="#FFA1D7F5" />
+                        <!--Value="{StaticResource InfoDarkBrush}"-->
+                    </Style>
+                    <Style TargetType="CheckBox" x:Key="ConnectionCheckBoxStyle">
+                        <Setter Property="Color" Value="#00C851" />
+                        <!--Value="{StaticResource SuccessBrush}"-->
+                    </Style>
+                </ResourceDictionary>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ControlApp.Controls.MaterialDeviceCard"
+             xmlns:resources="clr-namespace:ControlApp.ResX"
+             Visual="Material"             
+             >
+  <ContentView.Content>
+        <StackLayout Margin="0,0,0,5">
+        <Frame CornerRadius="0" HorizontalOptions="Fill" VerticalOptions="Start" Padding="10" Margin="0">
+            <Frame.GestureRecognizers>
+                <TapGestureRecognizer x:Name="Card"/>
+            </Frame.GestureRecognizers>
+            <StackLayout Orientation="Vertical" VerticalOptions="Center" Margin="5" >
+                <Label x:Name="DeviceTypeLabel" LineBreakMode="WordWrap" VerticalOptions="Center"/>
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Fill" >
+                    <Image x:Name="DeviceImage" WidthRequest="72" HeightRequest="72"/>
+                    <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{x:Static resources:ControlAppResources.Capacity}" FontSize="Micro" HorizontalOptions="StartAndExpand"/>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="End" Spacing="0">
+                                <Label x:Name="MaxCapacityLabel" FontSize="8" HorizontalOptions="End" VerticalOptions="Center" InputTransparent="True"/>
+                                <Label Text="/" FontSize="8" HorizontalOptions="End" VerticalOptions="Center" InputTransparent="True"/>
+                                <Label x:Name="ActualCapacityLabel" FontSize="8" HorizontalOptions="End" VerticalOptions="Center" InputTransparent="True"/>
+                            </StackLayout>
+                        </StackLayout>
+                        <ProgressBar x:Name="CapacityProgressBar" HorizontalOptions="FillAndExpand" IsEnabled="False" ScaleY="5" ProgressColor="Green"/>
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{x:Static resources:ControlAppResources.Temperature}" FontSize="Micro" HorizontalOptions="StartAndExpand"/>
+                            <Label x:Name="TemperatureLabel" FontSize="8" HorizontalOptions="End" VerticalOptions="Center" InputTransparent="True"/>
+                        </StackLayout>
+                        <ProgressBar x:Name="TemperatureProgressBar" HorizontalOptions="FillAndExpand" IsEnabled="False" ScaleY="5" ProgressColor="Brown" />
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>
